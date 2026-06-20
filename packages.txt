@@ -1,0 +1,2 @@
+# This file tells Streamlit Cloud what packages to install at system level
+# Required for sentence-transformers and PDF processing

@@ -25,9 +25,9 @@ class LLMConfig:
 @dataclass
 class EmbeddingConfig:
     """Embedding model configuration."""
-    provider: str = "google"  # google, openai, sentence_transformers
-    model_name: str = "models/embedding-001"
-    # Fallback: sentence-transformers/all-MiniLM-L6-v2 if no API key
+    provider: str = "sentence_transformers"  # google, openai, sentence_transformers
+    model_name: str = "all-MiniLM-L6-v2"
+    # Use sentence-transformers locally (no API key needed, fast & reliable)
 
 
 @dataclass
